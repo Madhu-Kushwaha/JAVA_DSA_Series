@@ -29,19 +29,31 @@ public class Array {
 //        System.out.println(ans);
 // solution : 3
 
-        int arr[] = {5, 6, 7, 8,9};
-        int max = arr[0];
+//        int arr[] = {5, 6, 7, 8,9};
+//        int max = arr[0];
+//
+//        int n = arr.length;
+//
+//        for(int i=0; i<=n-1; i++){
+//           if(arr[i] > max){
+//               max = arr[i];
+//           }
+//        }
+//        System.out.println("Print max value:" +  max);
 
-        int n = arr.length;
-
-        for(int i=0; i<=n-1; i++){
-           if(arr[i] > max){
-               max = arr[i];
-           }
-        }
-        System.out.println("Print max value:" +  max);
-
-//Solution : 4
+//Solution: 4
+//        int arr[] = {5, 6, 2, 8,9};
+//        int min = arr[0];
+//
+//        int n = arr.length;
+//
+//        for(int i=0; i<=n-1; i++){
+//            if(arr[i] < min){
+//                min = arr[i];
+//            }
+//        }
+//        System.out.println("Print min value:" +  min);
+//Solution : 5
 //        int arr[] = new int[5];
 //
 //        Scanner sc = new Scanner(System.in);
@@ -55,7 +67,7 @@ public class Array {
 //            System.out.println(val);
 //        }
 
-//solution : 5
+//solution : 6
      // declaration
     //    int arr[];
 
@@ -76,6 +88,47 @@ public class Array {
 //        System.out.println("value at index 0:"  + brr[0]);
 //
 //        System.out.println("value at index 1:"  + brr[1]);
+
+        ////////////////////////////////// 2 -D Array //////////////////////////////////
+
+// Solution : 6
+
+        //declaration
+        int [][] arr;
+
+        //allocation
+
+        arr = new int[3][4];
+
+        //initialization
+//        int [][]brr = {
+//                {1,2},
+//                {3,4},
+//                {5,6},
+//                {7,8}
+//        };
+        int [][]brr = {
+                {1,2},
+                {3,4,7,8,9},
+                {5,6,5,2},
+                {7,8}
+        };
+
+        int rowLength = brr.length;
+//        int colLength = brr[0].length;
+
+        for(int rowIndex=0; rowIndex<=rowLength-1;rowIndex++){
+            //jaise hi main kisi new row me aayi same point pr maine uss row ka colLength findout krlia
+            //current row -> brr[rowIndex]
+            //isme kitne columns  -> int colLength = brr[rowIndex].length;
+            int colLength = brr[rowIndex].length;
+            for(int colIndex=0; colIndex<=colLength-1;colIndex++){
+                System.out.print(brr[rowIndex][colIndex] + " ");
+            }
+            System.out.println();
+        }
+
+
 
     }
 }
