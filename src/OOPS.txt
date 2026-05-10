@@ -1,0 +1,85 @@
+
+/// Drawbacks of Functional / Procedural Programming
+
+/// Does not model real-world problems very well.
+/// If new data is added, all related functions may need modification.
+/// Global data can be accessed by all functions, reducing security.
+/// No clear boundaries or proper code structure.
+/// Lack of modularity makes programs harder to maintain as they grow.
+
+
+//     What is an OOP
+
+//• OOP (Object-Oriented Programming) is a programming style used to solve real-world problems by modeling real-world entities.
+//• It divides a program into small objects that can communicate with each other.
+//• Each object has its own attributes (data) and behavior (methods).
+//• OOP combines data and behavior into a single unit called an object.
+//• It promotes modularity, making code reusable and easy to maintain.
+//• OOP is based on real-life concepts, making programs easier to design and understand.
+
+
+//Objects and Classes
+
+//• Real-world entities like cars, persons, students, and buildings have state and behavior.
+//• In OOP, these real-world entities are represented as objects.
+//Example: A student named Rahul can be considered an object.
+//• To define how an object should look and behave, we use a Class (blueprint).
+//• An Object is an instance of a Class.
+
+
+//Think of it like this:
+//
+//Class = Blueprint / design
+//        Object = Real thing created from that blueprint
+//
+//Example with a Car:
+//
+//Class: Car
+//A class defines what every car will have:
+//
+//• Color
+//• Brand
+//• Speed
+//
+//And what it can do:
+//• Start()
+//• Stop()
+//• Accelerate()
+//
+//Objects:
+//Real cars created from the Car class:
+//
+//• Car1 = Red Toyota Camry
+//• Car2 = Black Honda City
+//• Car3 = White Hyundai Verna
+//
+//So:
+//
+//Class → Car (common blueprint)
+//Object → Your actual car (specific instance)
+//
+//Simple line to remember:
+//Class is a blueprint, Object is the real-world instance.
+
+//Attributes and Behaviour
+//
+//Attributes are state ,properties of an object.
+//Behaviour is methods/function that an object can perform
+
+
+//persopn  ()// attributes and behaviours // This is class
+//-> name , string ,height
+// -> speak()
+//-> eat()
+
+//These are objects
+////Rahul age - 18 height - 5,8
+//Ram age -19 , height - 5,9
+//Kunal age-24,height - 5,4
+
+//Summary of OOP
+//
+//• Object-Oriented Programming (OOP) is a programming style focused on real-world objects.
+//• It identifies real-life entities and represents them in code using classes and objects.
+//• Classes and objects are the basic building blocks of OOP.
+//• Popular OOP languages include C++, Java, and JavaScript.
