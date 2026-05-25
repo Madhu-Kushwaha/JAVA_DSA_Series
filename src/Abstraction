@@ -1,0 +1,90 @@
+Abstraction in Java
+
+1).Delivering only essential information to the outside world while hiding background details.
+2).It is a design and programming concept that separates interface from implementation.
+3).Users can use functionalities without knowing the actual internal working or implementation.
+4).Real-life example:
+
+->Using AirPods without knowing how they internally work.
+->Driving a car without understanding the engine mechanism.
+5).Main purpose:
+Reduce complexity
+Increase security by hiding unnecessary details
+Improve code maintainability and reusability
+
+
+Abstraction in Collections
+1).sort() method is used to sort arrays, lists, or collections of items.
+2).We only use the method to sort data, but we do not know the internal sorting algorithm used.
+3).The implementation details are hidden from the user, which is an example of abstraction.
+4).Example:
+->Collections.sort(numbers);
+It sorts the list automatically without exposing internal working.
+5).Benefits:
+->Simplifies programming
+->Hides complex implementation
+->Makes code easier to use and maintain
+
+
+What is Abstract Class?
+1).An abstract class in Java is a class that cannot be instantiated (object cannot be created directly).
+2).It is designed to be inherited or subclassed by other classes.
+3).An abstract class acts as a superclass for classes that share common properties or behavior.
+4).It provides abstraction by defining a common structure or interface for subclasses.
+5).It may contain:
+->Abstract methods (without implementation)
+->Concrete methods (with implementation)
+6).Complete implementation details are provided by the child classes.
+7).Abstract class concept is based on the idea of Abstraction in Java.
+
+
+
+bird fly eat extends sparrow
+
+fly()
+eat()
+
+
+
+Design Strategy
+1).Abstraction divides code into two parts:
+Interface
+Implementation
+2).The interface should remain separate from the implementation.
+3).If the internal implementation changes, the interface can still remain the same.
+4).Programs using the interface remain unaffected by implementation changes.
+5).Only recompilation with the latest implementation may be required.
+6).Abstraction helps in:
+-Modular programming
+-Better maintainability
+-Flexible and reusable code design
+
+
+## Abstract Class vs Interface
+
+| Feature                  | Abstract Class                                                 | Interface                                                                                           |
+| ------------------------ | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| **Instantiation**        | Cannot be instantiated directly                                | Cannot be instantiated                                                                              |
+| **Method Types**         | Can have both abstract and concrete methods                    | Before Java 8: only abstract methods. From Java 8 onwards: can also have default and static methods |
+| **Constructor**          | Can have constructors                                          | Cannot have constructors                                                                            |
+| **Access Modifiers**     | Methods can use public, protected, or private access modifiers | Methods are implicitly public. From Java 9, private methods are also allowed inside interfaces      |
+| **Inheritance**          | A class can extend only one abstract class                     | A class can implement multiple interfaces                                                           |
+| **Fields and Constants** | Can have fields and constants with any access modifier         | All fields are implicitly public, static, and final                                                 |
+| **Use Case**             | Used when classes share common properties and behavior         | Used to define a contract for multiple classes                                                      |
+
+## Advantages of Abstraction
+
+1. Reduces Complexity
+
+2. Increases Security
+
+3. Increases Reusability
+
+4. Avoids Code Duplication
+
+5. Supports Loose Coupling
+
+
+
+
+
