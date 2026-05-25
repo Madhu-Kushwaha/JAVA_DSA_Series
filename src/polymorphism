@@ -1,0 +1,29 @@
+Here are the exact points from the slide:
+
+Similar to Polymorphism in Life.
+Polymorphism = Many Forms.
+The ability of a single function or Operator to work in different ways based on the object it is acting upon or actual need.
+A phenomenon that allows an object to have several different forms and behaviours.
+Types
+
+Compile Time Polymorphism.
+Runtime Polymorphism.
+
+Static Polymorphism:
+Aka, Compile Time Polymorphism.
+Types
+
+Method Overloading
+Operator Overloading
+
+Method Overloading
+Overloading occurs when a class contains multiple methods sharing a name but differing in argument count or argument type.
+
+Operator Overloading
+Java does not support user-defined operator overloading but internally overloads certain operators (e.g., + for String concatenation and integer addition).
+
+
+Runtime Polymorphism
+
+Function Overriding - A Subclass can provide a specific implementation of a method that is already defined in its superclass.
+Dynamic Method Dispatch [Upcasting] - A superclass reference variable can refer to a subclass object and dynamic dispatch is used to resolve the called method at runtime.
