@@ -5,6 +5,13 @@ public class StringBasics {
 
     static void main() {
 
+
+
+//        replace
+
+        String name6 = "babbar";
+        name6 = name6.replace('b','l');
+        System.out.println(name6);
         // split -> output -> string array
 
         String input = "My, name , is , Mk";

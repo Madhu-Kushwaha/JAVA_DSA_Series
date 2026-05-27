@@ -130,3 +130,48 @@ Handling Access to Encapsulated Data:
 Even after encapsulation, external interaction with data is required.
 Public methods like getters and setters are used for communication.
 These methods provide controlled access to private data.
+
+
+Inheritace
+1). Similar to inhertance in life
+2). Child iherits attrinute and behabiours from parent.
+3). Inheritance is a way to create a class from eisting class.
+4). The Derived/child/subclass inherits some attributes and behaviours from Base/Parent/ Super class and may have more specialise attributes and behaviours.
+
+
+
+when do we use inheritance??
+
+1.After grasping the definition,the pivotal question arises:"When do we us iheritance?"
+2.Use inheritance whenever an IS-A relationship is identified between objects.
+3.Inheritance is applied where objects exhibit a hierarchical relationship,signying a specialized-generalized connection.
+4.Do not Reinvent the wheel.
+
+
+Classic Example – Program to Represent Different Types of Vehicles
+Represent entities like Cars, Motorcycles, etc.
+For Cars, attributes like:
+name
+model
+Methods like:
+start_engine()
+stop_engine()
+Similar attributes and methods for the Motorcycle class.
+Introduction of Inheritance
+Create a superclass "Vehicles"
+Define general attributes and methods in the Vehicles superclass.
+Cars and Motorcycles, as subclasses, inherit from the Vehicles superclass.
+
+
+Design Strategy
+Abstraction divides code into two parts:
+Interface
+Implementation
+The interface should remain separate from the implementation.
+If the internal implementation changes, the interface can still remain the same.
+Programs using the interface remain unaffected by implementation changes.
+Only recompilation with the latest implementation may be required.
+Abstraction helps in:
+Modular programming
+Better maintainability
+Flexible and reusable code design
