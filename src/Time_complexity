@@ -1,0 +1,186 @@
+This screenshot appears to be explaining **Linear Search and Time Complexity Analysis**.
+
+### Key Points
+
+#### 1. Asymptotic Notations
+
+* **Big O (O)** → **Worst Case**
+
+  * Represents the upper bound of an algorithm's running time.
+* **Theta (Θ)** → **Average Case**
+
+  * Represents the exact growth rate.
+* **Omega (Ω)** → **Best Case**
+
+  * Represents the lower bound of running time.
+
+---
+
+#### 2. Linear Search Example
+
+Array shown:
+
+```
+[9, 4, 8, 5, 9]
+```
+
+**Target = 9**
+
+The search checks elements one by one from left to right.
+
+---
+
+#### 3. Best Case
+
+* Target is found at the **first position**.
+* Only **1 comparison** is needed.
+* Time Complexity:
+
+  ```
+  Ω(1)
+  ```
+
+---
+
+#### 4. Worst Case
+
+* Target is at the **last position** or not present.
+* Need to check all **n elements**.
+* Number of comparisons = **n**
+* Time Complexity:
+
+  ```
+  O(n)
+  ```
+
+---
+
+#### 5. Average Case
+
+* Target can be anywhere in the array.
+* On average, about **n/2 comparisons** are required.
+* Since constants are ignored in complexity analysis:
+
+  ```
+  Θ(n/2) = Θ(n)
+  ```
+
+---
+
+### Final Complexity of Linear Search
+
+| Case         | Comparisons | Complexity |
+| ------------ | ----------- | ---------- |
+| Best Case    | 1           | Ω(1)       |
+| Average Case | n/2         | Θ(n)       |
+| Worst Case   | n           | O(n)       |
+
+**Conclusion:** Linear Search has **O(n)** worst-case time complexity because it may need to examine every element in the array.
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+This image shows the **order of time complexities from fastest to slowest growth**:
+
+### Time Complexity Hierarchy
+
+1. **Constant Time**
+
+   ```
+   O(1)
+   ```
+
+   * Execution time remains the same regardless of input size.
+   * Example: Accessing an array element by index.
+
+2. **Logarithmic Time**
+
+   ```
+   O(log n)
+   ```
+
+   * Input size is reduced by half each step.
+   * Example: Binary Search.
+
+3. **Square Root Time**
+
+   ```
+   O(√n)
+   ```
+
+   * Often seen in optimized factor-finding algorithms.
+
+4. **Linear Time**
+
+   ```
+   O(n)
+   ```
+
+   * Number of operations grows directly with input size.
+   * Example: Linear Search.
+
+5. **Linearithmic Time**
+
+   ```
+   O(n log n)
+   ```
+
+   * Common in efficient sorting algorithms.
+   * Example: Merge Sort, Heap Sort.
+
+6. **Quadratic Time**
+
+   ```
+   O(n²)
+   ```
+
+   * Nested loops over the same input.
+   * Example: Bubble Sort, Selection Sort.
+
+7. **Cubic Time**
+
+   ```
+   O(n³)
+   ```
+
+   * Three nested loops.
+   * Example: Some matrix multiplication approaches.
+
+8. **Exponential Time**
+
+   ```
+   O(2ⁿ)
+   ```
+
+   * Work doubles with every additional input element.
+   * Example: Recursive Fibonacci (without memoization).
+
+9. **Factorial Time**
+
+   ```
+   O(n!)
+   ```
+
+   * Extremely slow growth.
+   * Example: Generating all permutations.
+
+### Best to Worst Order
+
+```text
+O(1)
+   ↓
+O(log n)
+   ↓
+O(√n)
+   ↓
+O(n)
+   ↓
+O(n log n)
+   ↓
+O(n²)
+   ↓
+O(n³)
+   ↓
+O(2ⁿ)
+   ↓
+O(n!)
+```
+
+**Rule:** As you move down the list, algorithms become less efficient for large inputs. The most desirable complexities are usually **O(1), O(log n), and O(n)**, while **O(2ⁿ)** and **O(n!)** are generally avoided for large datasets.
